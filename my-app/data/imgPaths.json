@@ -1,0 +1,17 @@
+[
+    {
+        "imgPath": "/images/OrionWebMed.jpg",
+        "id": 1
+
+    },
+    {
+        "imgPath": "/images/RheaWebMed.jpg",
+        "id": 2
+
+    },
+    {
+        "imgPath": "/images/ArtemisWebMed.jpg",
+        "id": 3
+
+    }
+]
