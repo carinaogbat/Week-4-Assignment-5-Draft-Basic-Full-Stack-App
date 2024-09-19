@@ -5,7 +5,7 @@ export default function Layout( { children, home } ) {
     return (
         <div>
             <Head>
-                <title>Carina's Cats</title>
+                <title>Carinas Cats</title>
             </Head>
             <header>
                 <nav>
@@ -22,7 +22,7 @@ export default function Layout( { children, home } ) {
             )
             }
             <footer>
-                <p>Carina's Cats, a site for cat lovers </p>
+                <p>Carinas Cats, a site for cat lovers </p>
             </footer>
         </div>
     );
