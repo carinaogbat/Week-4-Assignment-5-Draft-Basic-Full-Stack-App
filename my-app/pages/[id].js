@@ -30,7 +30,7 @@ export default function catPage( {itemData, imgPath} ) {
     return (
         <Layout>
             <div className="card col-8">
-                <Image className="card-img-top" width={300} height={400} src={imgPath.imgPath} alt={itemData.name}/>
+                <Image className="card-img-top" width={350} height={350} src={imgPath.imgPath} alt={itemData.name}/>
                 <div className="card-body">
                     <h5 className="card-title">{itemData.name}</h5>
                     <h7>Indoor: {itemData.indoor}</h7>
