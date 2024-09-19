@@ -1,16 +1,22 @@
 [
     {
         "imgPath": "/images/OrionWebMed.jpg",
+        "width": 4032,
+        "height": 3024,
         "id": 1
 
     },
     {
         "imgPath": "/images/RheaWebMed.jpg",
+        "width": 3024,
+        "height": 4032,
         "id": 2
 
     },
     {
         "imgPath": "/images/ArtemisWebMed.jpg",
+        "width": 3024,
+        "height": 4032,
         "id": 3
 
     }
