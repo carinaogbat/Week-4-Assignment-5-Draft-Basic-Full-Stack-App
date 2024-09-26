@@ -71,7 +71,16 @@ describe('Home', () => {
     const bio = screen.getByRole('link', {
       name: /Artemis/i,
     });
-  })
+  });
+  
+  it('has cat footer', () => {
+    render(<Home allCats={allCats} />);
+
+    const footer = screen.getByRole('footer', {
+      name: /Carinas Cats, a site for cat lovers/i,
+    });
+  });
+  
   
 })
 
