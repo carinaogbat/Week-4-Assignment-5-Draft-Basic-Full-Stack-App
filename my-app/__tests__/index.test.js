@@ -2,6 +2,7 @@ import { render, screen } from '@testing-library/react'
 import Home from '../pages/index'
 import '@testing-library/jest-dom'
 
+
 const allCats = [
     {
         "name": "Orion",
@@ -56,13 +57,6 @@ describe('Home', () => {
     });
   })
   
-//   it('renders a link', () => {
-//     render(<Home allCats={allCats} />);
- 
-//     const aLink = screen.getByRole('link', {
-//       name: /Jane Coder/i,
-//     });
- 
-//     expect(aLink).toBeInTheDocument()
-//   });
 })
+
+  
