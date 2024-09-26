@@ -55,6 +55,22 @@ describe('Home', () => {
     const bio = screen.getByRole('link', {
       name: /Orion/i,
     });
+  });
+
+  it('has bio info about cat (Rhea)', () => {
+    render(<Home allCats={allCats} />);
+
+    const bio = screen.getByRole('link', {
+      name: /Rhea/i,
+    });
+  });
+
+  it('has bio info about cat (Artemis)', () => {
+    render(<Home allCats={allCats} />);
+
+    const bio = screen.getByRole('link', {
+      name: /Artemis/i,
+    });
   })
   
 })
