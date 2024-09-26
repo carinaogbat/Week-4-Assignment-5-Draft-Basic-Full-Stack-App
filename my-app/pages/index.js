@@ -39,7 +39,7 @@ export default function Home( { allCats } ) {
       <Layout home>
       <h1>Hello from Carinas Cats</h1>
       <div className="list-group">
-        {allCats.map(
+        {allCats && allCats.map(
           ({id, name}) => (
             <Link key={id} href={`/${id}`} className="list-group-item">
               {name}
@@ -48,9 +48,6 @@ export default function Home( { allCats } ) {
         )
         }
       </div>
-
-
-
       </Layout>
     </>
   );
