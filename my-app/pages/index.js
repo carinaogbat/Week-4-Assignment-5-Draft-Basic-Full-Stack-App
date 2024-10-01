@@ -3,7 +3,7 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 import Layout from "../components/layout";
-import { getSortedData } from "../lib/data";
+import { getSortedData } from "../lib/data-firebase";
 import Link from 'next/link';
 
 // const geistSans = localFont({
@@ -19,7 +19,7 @@ import Link from 'next/link';
 
 // get static props
 export async function getStaticProps() {
-  const allCats = getSortedData();
+  const allCats = await getSortedData();
   return {
     props: { allCats }
   };
@@ -41,7 +41,7 @@ export default function Home( { allCats } ) {
       <div className="list-group">
         {allCats && allCats.map(
           ({id, name}) => (
-            <Link key={id} href={`/${id}`} className="list-group-item">
+            <Link key={id} href={`/cats/${id}`} className="list-group-item">
               {name}
             </Link>
           )

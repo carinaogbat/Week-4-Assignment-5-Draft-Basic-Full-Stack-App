@@ -1,5 +1,5 @@
-import Layout from "../components/layout";
-import { getCatIds, getData } from "../lib/data";
+import Layout from "../../components/layout";
+import { getCatIds, getData } from "../../lib/data-firebase";
 import { getFilePath } from "../lib/data";
 import Image from 'next/image';
 
@@ -18,7 +18,7 @@ export async function getStaticProps( { params } ) {
 
 // get static paths
 export async function getStaticPaths () {
-    const paths = getCatIds();
+    const paths = await getCatIds();
     return {
         paths,
         fallback: false
