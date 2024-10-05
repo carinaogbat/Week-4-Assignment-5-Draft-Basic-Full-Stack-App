@@ -1,6 +1,6 @@
 import Layout from "../../components/layout";
 import { getCatIds, getData } from "../../lib/data-firebase";
-import { getFilePath } from "../lib/data";
+import { getFilePath } from "../../lib/data";
 import Image from 'next/image';
 
 // get static props
