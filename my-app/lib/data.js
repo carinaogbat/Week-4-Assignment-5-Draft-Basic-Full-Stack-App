@@ -6,7 +6,7 @@ import got from 'got';
 // const dataDir = path.join( process.cwd(), 'data' );
 
 // define url from rest endpoint
-const dataURL = "https://dev-cs5033-carinaogbat.pantheonsite.io/wp-json/twentytwentyone-child/v1/latest-posts/1"
+const dataURL = "https://dev-cs5033-carinaogbat.pantheonsite.io/wp-json/twentytwentyone-child/v1/special"
 
 export async function getSortedData() {
   // get filepath to json file
